@@ -8,19 +8,21 @@ import {HttpClientModule} from '@angular/common/http';
 
 import {PokemonCounterComponent} from './pokemon-counter/pokemon-counter.component';
 import {CountUpModule} from "ngx-countup";
-import {MatDividerModule} from "@angular/material/divider";
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonCounterComponent
+    PokemonCounterComponent,
+    PokemonListComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     CountUpModule,
-    MatDividerModule
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

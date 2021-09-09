@@ -1,0 +1,5 @@
+<mat-list class="pokemon-list">
+  <mat-list-item *ngFor="let pokemon of pokemons">
+    <a [href]=pokemon.url target="_blank">{{pokemon.name}}</a>
+  </mat-list-item>
+</mat-list>

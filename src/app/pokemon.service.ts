@@ -11,7 +11,7 @@ export interface PokemonApiResult {
   count: number,
   next?: string,
   previous?: string,
-  result: PokemonResult[]
+  results: PokemonResult[]
 }
 
 @Injectable({

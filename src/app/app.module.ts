@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
+import { } from "rxjs"
+
 import { PokemonCounterComponent } from './pokemon-counter/pokemon-counter.component';
 
 @NgModule({

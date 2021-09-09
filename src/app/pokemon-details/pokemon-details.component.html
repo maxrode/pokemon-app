@@ -1,0 +1,6 @@
+<mat-card>
+  <mat-card-title>{{name}}</mat-card-title>
+  <div *ngFor="let item of details.abilities">
+    <mat-card-content>{{item.ability.name}}</mat-card-content>
+  </div>
+</mat-card>

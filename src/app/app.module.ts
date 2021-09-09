@@ -10,19 +10,23 @@ import {PokemonCounterComponent} from './pokemon-counter/pokemon-counter.compone
 import {CountUpModule} from "ngx-countup";
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import {MatListModule} from "@angular/material/list";
+import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonCounterComponent,
-    PokemonListComponent
+    PokemonListComponent,
+    PokemonDetailsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     CountUpModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

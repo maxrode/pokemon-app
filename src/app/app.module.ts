@@ -1,13 +1,14 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { HttpClientModule } from '@angular/common/http';
-import { } from "rxjs"
+import {HttpClientModule} from '@angular/common/http';
 
-import { PokemonCounterComponent } from './pokemon-counter/pokemon-counter.component';
+import {PokemonCounterComponent} from './pokemon-counter/pokemon-counter.component';
+import {CountUpModule} from "ngx-countup";
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -17,9 +18,12 @@ import { PokemonCounterComponent } from './pokemon-counter/pokemon-counter.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    CountUpModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

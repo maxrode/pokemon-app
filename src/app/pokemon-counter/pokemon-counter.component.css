@@ -1,0 +1,13 @@
+.pokemon-counter {
+  background-color: #3f51b5;
+}
+
+.pokemon-counter > * {
+  display: inline-block;
+  color: white;
+}
+
+.pokemon-counter-incrementer {
+  margin: 10px;
+  width: 3em;
+}

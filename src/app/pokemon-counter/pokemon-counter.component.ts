@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PokemonService } from '../pokemon.service';
+import {Component, OnInit} from '@angular/core';
+import {PokemonService} from '../pokemon.service';
 
 @Component({
   selector: 'app-pokemon-counter',
@@ -8,9 +8,10 @@ import { PokemonService } from '../pokemon.service';
 })
 export class PokemonCounterComponent implements OnInit {
 
-  pokemonCount : number = 0;
+  pokemonCount: number = 0;
 
-  constructor(private pokemonService : PokemonService) { }
+  constructor(private pokemonService: PokemonService) {
+  }
 
   ngOnInit(): void {
     this.pokemonService.pokemonApi().subscribe(data => this.pokemonCount = data.count)
